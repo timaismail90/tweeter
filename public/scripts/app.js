@@ -99,7 +99,7 @@ function renderTweets(tweets) {
 
 // form submission assignment found below
 
-function newTweet() {
+function formSubmitHandler() {
     $("form").submit(function(event) {
         event.preventDefault();
         $(".max-length").hide();
@@ -110,26 +110,30 @@ function newTweet() {
         if (len >= max) {
             $(".max-length").slideDown();
         } else {
-
             var form = $(this);
             var url = form.attr('action');
-
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: form.serialize(), // serializes the form's elements.
-                success: function(data) {
-                    loadTweets(); // show response from the script.
-                }
-            });
+            createTweet(url, form.serialize());
+            $(".new-tweet textarea").val('')
+            $('.counter').text(140)
+            $('.max-length').slideUp();
 
 
         }
-
     });
 }
 
 // AJAX GET Request
+function createTweet(url, data) {
+    $.ajax({
+        type: "POST",
+        url: url,
+        data: data, // serializes the data, form's elements.
+        success: function(data) {
+            loadTweets(); // show response from the script.
+        }
+    });
+
+}
 
 function loadTweets() {
     $.ajax({
@@ -145,21 +149,29 @@ function loadTweets() {
 
 
 // function for the toggle button below:
-$('#nav-bar button').click(function() {
-    $('.new-tweet').slideToggle(slow)
+// $('#nav-bar button').click(function() {
+//     $('.new-tweet').slideToggle(slow)
+//     $('.new-tweet textarea').focus();
 
 
-    $('.new-tweet textarea').focus();
-
-
-});
+// });
 
 
 
 $(document).ready(function() {
+    // function for the toggle button below:
+    $('#nav-bar button').click(function() {
+        $('.new-tweet').slideToggle('medium')
+        $('.new-tweet textarea').focus();
+        console.log("welcome");
+
+
+    });
+
+    $('.new-tweet').hide();
     $(".max-length").hide();
     loadTweets();
-    newTweet();
+    formSubmitHandler();
 
 
 });

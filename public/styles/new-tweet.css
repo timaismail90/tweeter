@@ -22,9 +22,11 @@ header {
     border-style: groove;
     border-radius: 1em;
     overflow: hidden;
-
+    margin: 10px;
 
 }
+
+
 
 html {
     box-sizing: border-box;
@@ -71,16 +73,28 @@ body {
     margin: 15px;
 }
 
+/*
 .article-tweet p {
-    line-height: 3em;
+    line-height: 1.2em;
     background-color: #ffffff;
     height: 100px;
     padding left: 10px;
     margin: 0;
     border-color: grey;
     text-indent: 20px;
-}
+    word-wrap: break-word;
+}*/
 
+
+.article-tweet p {
+    background-color: #ffffff;
+    height: 100px;
+    padding: 14px;
+    margin: 0;
+    border-color: grey;
+    word-wrap: break-word;
+    line-height: 1.5em;
+}
 
 footer {
     line-height: 1.8em;
