@@ -66,7 +66,7 @@ body {
 
 }
 
-.Handle {
+.handle {
     float: right;
     margin: 15px;
 }
@@ -78,6 +78,7 @@ body {
     padding left: 10px;
     margin: 0;
     border-color: grey;
+    text-indent: 20px;
 }
 
 
@@ -88,7 +89,7 @@ footer {
     border-top-color: grey;
 
     text-indent: 10px;
-    border-top-style: groove;
+    /*border-top-style: groove;*/
 }
 
 .article-tweet header {
