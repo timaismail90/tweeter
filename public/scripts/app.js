@@ -89,7 +89,7 @@ $(document).ready(function() {
             // Create a new p tag
             var newTweetElement = createTweetElement(tweet)
 
-            $('#tweet-container').append(newTweetElement)
+            $('#tweet-container').prepend(newTweetElement)
         });
 
 
@@ -136,7 +136,8 @@ $(document).ready(function() {
             type: 'GET',
             dataType: 'json',
             success: function(tweets) {
-                (renderTweets(tweets));
+                console.log(tweets)
+                renderTweets(tweets);
             }
         })
     }

@@ -1,42 +1,101 @@
 header {
-  background-color:  #eee;
+    background-color: #eee;
 }
-.container {
-  margin: 80px auto 0px;
-  width: 500px;
-  background-color: white;
-  display:flex;
-flex-direction: column;
+
+/*.container {
+    margin: 80px auto 0px;
+    width: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}*/
+
+#tweet-container {
+    padding: 20px 2em;
+    /*border-style: groove;*/
+    display: block;
 }
-#tweet-container{
-padding: 100px 2em;
+
+
+.article-tweet {
+    margin: auto;
+    border-style: groove;
+    border-radius: 1em;
+    overflow: hidden;
+
+
 }
+
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
+
 /*
  * Global layout stuff
  */
 body {
-  margin: 0;
-  color: #244751;
-  background-color: #eee;
-  font-family: 'Roboto Condensed', sans-serif;
-  /*border: 5px solid black;*/
+    margin: 0;
+    color: #244751;
+    background-color: #eee;
+    font-family: 'Roboto Condensed', sans-serif;
+    /*border: 5px solid black;*/
+}
+
+.avatar img {
+    float: left;
+    border-radius: 5px;
+    margin: 5px;
+    height: 65px;
+    padding: 0;
+    background-color: #0066cc;
+}
+
+.username {
+    line-height: 2em;
+    text-align: left;
+    padding-top: 2px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: x-large;
+
+}
+
+.Handle {
+    float: right;
+    margin: 15px;
+}
+
+.article-tweet p {
+    line-height: 3em;
+    background-color: #ffffff;
+    height: 100px;
+    padding left: 10px;
+    margin: 0;
+    border-color: grey;
 }
 
 
+footer {
+    line-height: 1.8em;
+    background-color: #ffffff;
+    border-color: grey;
+    border-top-color: grey;
 
+    text-indent: 10px;
+    border-top-style: groove;
+}
 
-
-
-
-
-
-
+.article-tweet header {
+    margin: 0;
+    height: 87px;
+    line-height: 70px background-color
+}
 
 
 /*#tweet-container{
