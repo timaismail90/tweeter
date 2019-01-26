@@ -112,6 +112,16 @@ footer {
     line-height: 70px background-color
 }
 
+.icons {
+    float: right;
+    opacity: 0;
+    padding: 5px;
+}
+
+.article-tweet:hover .icons {
+    opacity: 1;
+
+}
 
 /*#tweet-container{
   margin: 0px auto;

@@ -74,8 +74,13 @@ function createTweetElement(tweet) {
           </header>
           <p>${tweet.content.text}</p>
               <hr>
-          <footer class= "b">${tweet.created_at}
-                10 days ago
+          <footer class= "b"> <span>${moment(tweet.created_at).fromNow()}</span>
+          <div class="icons">
+            <i class="far fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+           </div>
+
           </footer>
         </article>`
 
