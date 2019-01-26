@@ -65,8 +65,8 @@ function createTweetElement(tweet) {
         `<article class="article-tweet">
           <header>
 
-            <div class= "avatar" ${tweet.user.avatars.small}>
-              <img src="https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png" alt="av" />
+            <div class= "avatar" >
+              <img src="${tweet.user.avatars.small}" />
             </div>
 
             <span class= "username">${tweet.user.name}</span>

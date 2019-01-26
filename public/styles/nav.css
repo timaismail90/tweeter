@@ -82,9 +82,9 @@
 }
 
 
-#nav-bar header {
+span.header {
     float: left;
+    margin-top: 1em;
 
-    line-height: 250;
-
+    /*line-height: 250;*/
 }

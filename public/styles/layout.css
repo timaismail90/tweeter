@@ -49,15 +49,16 @@ html {
     margin: 3rem 1.5rem;
     background-color: #e6e6e6;
     padding-top: 0.5rem;
-    border-radius: 5px;
-    min-height: 150px;
+    border-radius: 10px;
+    min-height: 150px
+        /*height: 180px;*/
 
 }
 
 .new-tweet h2 {
     border-bottom: 1px solid black;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.75rem;
+    margin-right: 1.0rem;
     text-align: left;
     margin-top: 1.0rem;
 
@@ -65,9 +66,11 @@ html {
 
 .new-tweet textarea {
     width: 90%;
-    padding-right: 0.5rem;
+    /*padding-right: 0.5rem;
     padding-left: 0.5rem;
-    padding-top: 0.5rem;
+    padding-top: 0.5rem;*/
+    margin-left: 1em;
+    /*height: 70px;*/
 
 }
 
@@ -87,6 +90,10 @@ section form span {
     float: right;
     margin-right: 13px;
 }
+
+/*form {
+    padding: 35px;
+}*/
 
 /*.container{
   margin: 80px auto;
