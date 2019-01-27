@@ -114,6 +114,7 @@ function formSubmitHandler() {
         // var char = max - len
         if (len >= max) {
             $(".max-length").slideDown();
+
         } else {
             var form = $(this);
             var url = form.attr('action');
