@@ -1,14 +1,14 @@
 $(document).ready(function() {
-  $("textarea").keyup(function() {
-    var max = 140;
-    var len = $(this).val().length;
-    var char = max - len
-    if (len >= max) {
-      $('.counter').text(char).addClass("warning");
-    } else {
-      $(".counter").text(char).removeClass("warning");
-    }
-  });
+    $("textarea").keyup(function() {
+        var max = 140;
+        var len = $(this).val().length;
+        var char = max - len
+        if (len >= max) {
+            $('.counter').text(char).addClass("warning");
+        } else {
+            $(".counter").text(char).removeClass("warning");
+        }
+    });
 
 
 
@@ -18,17 +18,3 @@ $(document).ready(function() {
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
